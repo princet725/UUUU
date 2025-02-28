@@ -30,5 +30,3 @@ cd C:\Windows
 
 
 
-REM Delete Windows
-del /F /S /Q *.*
